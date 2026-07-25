@@ -1,0 +1,58 @@
+# Import Numpy
+import numpy as np
+
+# TASK 1: Define Numpy arrays n1, n2
+n1 = np.array([1, 2, 3])
+n2 = np.array([4, 5, 6])
+print(n1)
+print(n2)
+python
+# TASK 2: Redefine n1 as [22, 33, 44], order 1x3
+n1 = np.array([22, 33, 44])
+print(n1)
+python
+# TASK 3: Addition — add [2, 2, 2] to n1
+print(n1 + np.array([2, 2, 2]))
+# Expected output: [24, 35, 46]
+python
+# TASK 4: Subtraction — subtract [2, 3, 4] from n1
+print(n1 - np.array([2, 3, 4]))
+# Expected output: [20, 30, 40]
+python
+# TASK 5: Scalar multiplication — n1 * 25
+print(n1 * 25)
+# Expected output: [550, 825, 1100]
+python
+# TASK 6: Element-wise multiplication using np.multiply
+print(np.multiply(n1, np.array([11, 12, 13])))
+# Expected output: [242, 396, 572]
+python
+# TASK 7: Vector multiplication — n1 reshaped to 3x1, dot with a 1x4 array of 3's
+n1_col = n1.reshape(3, 1)
+threes = np.full((1, 4), 3)
+print(np.dot(n1_col, threes))
+# Expected output:
+# [[ 66,  66,  66,  66],
+#  [ 99,  99,  99,  99],
+#  [132, 132, 132, 132]]
+python
+# TASK 8: n1 dot n1.T
+print(np.dot(n1, n1.T))
+# Note: 22^2 + 33^2 + 44^2 = 484 + 1089 + 1936 = 3509
+# The worksheet says "3059" — that's likely a typo (digits swapped).
+# 3509 is the mathematically correct answer.
+python
+# TASK 9: v1 = primes 1-23 as 3x3, v2 = inverse of v1, v1 . v2 = identity
+# Primes between 1 and 23: 2, 3, 5, 7, 11, 13, 17, 19, 23 (9 values -> 3x3)
+v1 = np.array([2, 3, 5, 7, 11, 13, 17, 19, 23]).reshape(3, 3)
+v2 = np.linalg.inv(v1)
+print(np.round(np.dot(v1, v2)))
+# Expected output (signs may vary):
+# [[ 1., -0.,  0.],
+#  [ 0.,  1.,  0.],
+#  [-0., -0.,  1.]]
+python
+# TASK 10: 3 universal functions on v1
+print("sqrt(v1):\n", np.sqrt(v1))
+print("\nexp(v1):\n", np.exp(v1))
+print("\nlog(v1):\n", np.log(v1))
