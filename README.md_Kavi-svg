@@ -1,0 +1,55 @@
+# ML-Internship_Module
+
+Notebooks completed as part of the **Machine Learning Fellowship Program** (8 modules total), covering core ML/DL concepts from the ground up — implemented primarily using **NumPy** for a deeper understanding of the underlying math before relying on high-level libraries.
+
+**Author:** Kavyanjali Bouddha
+**University:** Gautam Buddha University (GBU), Greater Noida
+
+## 📚 Modules
+
+Progress: 5 / 8 modules solved and uploaded so far.
+
+| # | Module | Topic | Description | Status |
+|---|--------|-------|-------------|--------|
+| 1 | `Module_1_worksheet.ipynb` | Vectors using NumPy | Array creation, vector addition/subtraction, scalar & element-wise multiplication, dot products, matrix inversion, and universal functions | ✅ |
+| 2 | `UM_Module_2_Worksheet.ipynb` | Cost Function & Gradient Descent | Implementing linear regression cost function and gradient descent from scratch to fit house price vs. size data | ✅ |
+| 3 | `Module_3_Logistic_Regression.ipynb` | Logistic Regression | Sigmoid function, decision boundaries, and training a logistic regression classifier with scikit-learn (requires `utils.py`) | ✅ |
+| 4 | `Module_4_Regularization.ipynb` | Regularized Cost & Gradient | Implementing L2-regularized cost and gradient functions for both linear and logistic regression | ✅ |
+| 5 | `Module_5_Neural_Network.ipynb` | Simple Neural Network | A 2-layer neural network built from scratch — forward propagation, backpropagation, and gradient-based weight updates using sigmoid activation | ✅ |
+| 6 | `Module_6_*.ipynb` | — | — | ⏳ |
+| 7 | `Module_7_*.ipynb` | — | — | ⏳ |
+| 8 | `Module_8_*.ipynb` | — | — | ⏳ |
+
+> Table will be updated as remaining modules are solved and uploaded.
+
+## 🛠️ Tech Stack
+
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+
+## 📂 Structure
+
+Each module is a self-contained Jupyter/Colab notebook (`.ipynb`) with:
+- Concept explanation (markdown cells with theory/formulas)
+- Guided code sections to complete
+- A verification cell with expected output to check correctness
+
+> **Note:** `Module_3_Logistic_Regression.ipynb` imports a helper function (`plot_data`) from `utils.py`. Keep `utils.py` in the same folder as the notebook for it to run correctly.
+
+## 🚀 Getting Started
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/<your-username>/ML-Internship_Module.git
+   ```
+2. Open any notebook in Jupyter Notebook, JupyterLab, or Google Colab
+3. Run the cells in order — each notebook is self-contained
+
+## 📌 Purpose
+
+These modules are designed to build intuition for machine learning fundamentals — implementing algorithms like cost functions, gradients, and neural networks manually before using frameworks like scikit-learn or TensorFlow/Keras.
+
+---
+*Coursework for the Machine Learning Fellowship Program — Kavyanjali Bouddha, Gautam Buddha University.*
